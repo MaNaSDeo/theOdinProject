@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDN Table Basic</title>
+    <style>
+        #first table {
+            border-collapse: collapse;
+        }
+
+        #first td,
+        #first th {
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+
+        #second table {
+            border-collapse: collapse;
+        }
+
+        #second td,
+        #second tr {
+            border: 1px solid grey;
+            padding: 10px 20px;
+        }
+
+        #third table {
+            border-collapse: collapse;
+        }
+
+        #third th,
+        #third td {
+            border: 1px solid grey;
+            padding: 10px 20px;
+        }
+
+        #fourth table {
+            border-collapse: collapse;
+        }
+
+        #fourth td,
+        #fourth th {
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+
+        /* .yellow {
+            background-color: yellow;
+        } */
+        #fifth table {
+            border-collapse: collapse;
+        }
+
+        #fifth th,
+        #fifth td {
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first">
+        <table>
+            <tr>
+                <td>Hi, I'm your first cell.</td>
+                <td>I'm your second cell.</td>
+                <td>I'm your third cell.</td>
+                <td>I'm your fourth cell.</td>
+            </tr>
+            <tr>
+                <td>First cell, Second column</td>
+                <td>Second cell, Second column</td>
+                <td>Third cell, Second column</td>
+                <td>Fourth cell, Second column</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div id="second">
+        <table>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Knocky</td>
+                <td>Flor</td>
+                <td>Ella</td>
+                <td>Juan</td>
+            </tr>
+            <tr>
+                <td>Breed</td>
+                <td>Jack Russell</td>
+                <td>Poodle</td>
+                <td>Streetdog</td>
+                <td>Cocker Spaniel</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>16</td>
+                <td>9</td>
+                <td>10</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Owner</td>
+                <td>Mother-in-law</td>
+                <td>Me</td>
+                <td>Me</td>
+                <td>Sister-in-law</td>
+            </tr>
+            <tr>
+                <td>Eating Habits</td>
+                <td>Eats everyone's leftovers</td>
+                <td>Nibbles at food</td>
+                <td>Hearty eater</td>
+                <td>Will eat till he exlodes</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div id="third">
+        <table>
+            <tr>
+                <th>Animals</th>
+            </tr>
+            <tr>
+                <th>Hippopotamus</th>
+            </tr>
+            <tr>
+                <th>Horse</th>
+                <td>Mare</td>
+            </tr>
+            <tr>
+                <th>Stallion</th>
+            </tr>
+            <tr>
+                <th>Crocodile</th>
+            </tr>
+            <tr>
+                <th>Chicken</th>
+                <td>Hen</td>
+            </tr>
+            <tr>
+                <th>Rooster</th>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div id="fourth">
+        <table>
+            <colgroup>
+                <col />
+                <col style="background-color: yellow;" />
+                <!-- <col style="background-color: yellow;" />  //To give color to 1st span.
+                <col style="background-color: yellow;" span="2" /> --> //To give color to both span.
+            </colgroup>
+            <tr>
+                <th>Data 1</th>
+                <th class="yellow">Data 2</th>
+            </tr>
+            <tr>
+                <td>Calcutta</td>
+                <td class="yellow">Orange</td>
+            </tr>
+            <tr>
+                <td>Robots</td>
+                <td class="yellow">Jazz</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div id="fifth">
+        <table>
+            <colgroup>
+                <col />
+                <col />
+                <col style="background-color: aquamarine;" />
+                <col />
+                <col style="background-color: aquamarine;" />
+                <col style="background-color: orange; border: 5px solid rgb(187, 109, 103);" />
+                <col />
+                <col />
+            </colgroup>
+            <tr>
+                <th>&nbsp;</th>
+                <th>Mon</th>
+                <th>Tues</th>
+                <th>Wed</th>
+                <th>Thurs</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <th>1st period</th>
+                <td>English</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>German</td>
+                <td>Dutch</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th>2nd period</th>
+                <td>English</td>
+                <td>English</td>
+                <td>&nbsp;</td>
+                <td>German</td>
+                <td>Dutch</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th>3rd period</th>
+                <td>&nbsp;</td>
+                <td>German</td>
+                <td>&nbsp;</td>
+                <td>German</td>
+                <td>Dutch</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <th>4th period</th>
+                <td>&nbsp;</td>
+                <td>English</td>
+                <td>&nbsp;</td>
+                <td>German</td>
+                <td>Dutch</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
